@@ -3,7 +3,6 @@ import { ClientTrustRequestSchema } from "@/lib/paymind/intelligence/schemas";
 import { assessClientEvidence } from "@/lib/paymind/intelligence/client-trust";
 import { productionAuthNotIntegrated } from "@/lib/paymind/intelligence/dev-only";
 
-export const runtime = "nodejs";
 
 export async function POST(request: Request) {
   if (productionAuthNotIntegrated()) {

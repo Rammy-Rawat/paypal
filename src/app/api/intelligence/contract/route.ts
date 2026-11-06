@@ -3,7 +3,6 @@ import { ContractRequestSchema } from "@/lib/paymind/intelligence/schemas";
 import { analyzeContract } from "@/lib/paymind/intelligence/contract-analysis";
 import { productionAuthNotIntegrated } from "@/lib/paymind/intelligence/dev-only";
 
-export const runtime = "nodejs";
 export const maxDuration = 45;
 
 export async function POST(request: Request) {
